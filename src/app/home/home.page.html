@@ -1,20 +1,26 @@
-<ion-header [translucent]="true">
+<ion-header id="header">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title style="text-align: center">
+    Arkadaşına Öner
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content id="body">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card id="card1"  color="success">
+    <h3>Twitter ile Arkadaşlarınla iletişime geçmek, onlarla komik videolar paylaşmak, Trend Topic olan haberleri görmek ve daha fazlasını istiyorsan aşağıdaki linklerden bize katılabilirsin! </h3>
+  </ion-card>
+
+  <ion-card color="success">
+      <a id="android" href="https://play.google.com/store/apps/details?id=com.twitter.android&hl=tr&gl=US" type="dark"><h3>Android</h3></a>
+      <a  id="ios" href="https://apps.apple.com/tr/app/twitter/id333903271?l=tr" ><h3>App Store</h3></a>
+  </ion-card>
+
+  <ion-card color="success">
+    <h1 style="text-align: center" >E-Mail ile Paylaş</h1>
+    <ion-button expand="block" class="ion-margin" (click)="shareViaEmail()">E-mail</ion-button>
+  </ion-card>
+
+
 </ion-content>
